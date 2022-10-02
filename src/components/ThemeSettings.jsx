@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ThemeSettings() {
+const ThemeSettings = () => {
   return (
     <div>ThemeSettings</div>
   )

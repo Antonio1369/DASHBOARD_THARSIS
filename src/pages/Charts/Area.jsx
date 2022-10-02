@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Area() {
+const Area = () => {
   return (
     <div>Area</div>
   )

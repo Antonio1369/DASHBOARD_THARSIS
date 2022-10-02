@@ -1,8 +1,8 @@
 import React from 'react'
 
-function SparkLine() {
+const SparkLine = () => {
   return (
-    <div>SparkLines</div>
+    <div>SparkLine</div>
   )
 }
 

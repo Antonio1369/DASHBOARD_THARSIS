@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Bar() {
+const Bar = () => {
   return (
     <div>Bar</div>
   )

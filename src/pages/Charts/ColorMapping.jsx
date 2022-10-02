@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ColorMapping() {
+const ColorMapping = () => {
   return (
     <div>ColorMapping</div>
   )

@@ -3,13 +3,15 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import {Navbar, Footer,Sidebar,ThemeSettings} from './components';
-import {Ecommerce,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,
+import {Electrocardiogram,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,
 Area,Bar,Pie,Financial,ColorMapping,ColorPicker,Editor, Line} from './pages'
 
+import { useStateContext } from './contexts/ContextProvider';
 import './App.css'
 
 const App = () => {
-  const activeMenu = true;
+  const {activeMenu} = useStateContext();
+
   return (
     <div>
       <BrowserRouter>
@@ -50,8 +52,8 @@ const App = () => {
         <div>
           <Routes> 
             {/* Dashboard*/}
-            <Route path='/' element={<Ecommerce/>}/>
-            <Route path='/ecommerce' element={<Ecommerce/>}/>
+            <Route path='/' element={<Electrocardiogram/>}/>
+            <Route path='/electrocardiogram' element={<Electrocardiogram/>}/>
            {/* pages*/}
             <Route path='/oders' element={<Orders/>}/>
             <Route path='/employees' element={<Employees/>}/>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Line() {
+const Line = () => {
   return (
     <div>Line</div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Kanban() {
+const Kanban = () => {
   return (
     <div>Kanban</div>
   )
