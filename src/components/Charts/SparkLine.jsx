@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SparkLines() {
+function SparkLine() {
   return (
     <div>SparkLines</div>
   )
 }
 
-export default SparkLines
+export default SparkLine
