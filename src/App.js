@@ -57,7 +57,7 @@ const App = () => {
             {/* Apss*/}
             <Route path='/kanban' element="Kanban"/>
             <Route path='/editor' element="Editor"/>
-            <Route path='/calendar' element="Editor"/>
+            <Route path='/calendar' element="Editor "/>
             <Route path='/customers' element="Customers"/>
 
             
