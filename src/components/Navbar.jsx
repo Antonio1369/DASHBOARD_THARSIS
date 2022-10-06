@@ -25,7 +25,7 @@ const NavButton =({tittle, customFunc,icon, color, dotColor}) => (
 )
 
 const Navbar = () => {
-  const {activeMenu, setActiveMenu} =useStateContext();
+  const {activeMenu, setActiveMenu, isClicked, setIsClicked} =useStateContext();
 
   return (
     <div
@@ -61,10 +61,28 @@ const Navbar = () => {
         <div clasname ="flex items-center gap-2 cursor-pointer p-1
         hover:bg-light-gray rounded-lg"
         onClick={()=> handleClick('userProfile')} >
-
+          <img
+          className ="rounded-full w-8 h-8"
+          src = {avatar}
+          />
+          <p>
+            <span className='text-gray-400 text-14'>
+              Hi
+            </span>{' '}
+            <span className='text gray-400 font-bold ml-1 text-14'>
+              Antonio 
+            </span>
+          </p>
+          <MdKeyboardArrowDown 
+          className='text gray 400 text-14'  />
         </div>
         
       </TooltipComponent>
+
+      {isClicked.cart && <Cart/>}
+      {isClicked.chat && <Chat/>}
+      {isClicked.notification && <Notification/>}
+      {isClicked.userProfile && <UserProfile/>}
     </div>
 
     </div>
