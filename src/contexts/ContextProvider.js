@@ -1,4 +1,5 @@
 import React,{createContext, useContext, useState} from "react";
+
 const StateContext =createContext();
 
 const initalState = {
@@ -10,6 +11,7 @@ const initalState = {
 
 export const ContextProvider =({children}) => {
     const [activeMenu, setActiveMenu] = useState(true);
+    
     return (
         <StateContext.Provider
         value ={{
