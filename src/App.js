@@ -3,11 +3,12 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {FiSettings} from 'react-icons/fi';
 import {TooltipComponent} from '@syncfusion/ej2-react-popups'
 import {Navbar, Footer,Sidebar,ThemeSettings} from './components';
-import {Electrocardiogram,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,
+import {Ecommerce,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,
 Area,Bar,Pie,Financial,ColorMapping,ColorPicker,Editor, Line} from './pages'
 
 import { useStateContext } from './contexts/ContextProvider';
 import './App.css'
+
 
 const App = () => {
   
@@ -38,6 +39,7 @@ const App = () => {
             <Sidebar /> 
           </div>
         )}
+
         <div className={`dark:bg-main-bg
         bg-main-bg min-h-screen w-full ${activeMenu? 
           ' md:ml-72':'flex-2'}`  
@@ -46,13 +48,14 @@ const App = () => {
             <Navbar/>
 
           </div>
+        
 
-        </div>
+
         <div>
           <Routes> 
             {/* Dashboard*/}
-            <Route path='/' element={<Electrocardiogram/>}/>
-            <Route path='/electrocardiogram' element={<Electrocardiogram/>}/>
+            <Route path='/' element={<Ecommerce/>}/>
+            <Route path='/ecommerce' element={<Ecommerce/>}/>
            {/* pages*/}
             <Route path='/oders' element={<Orders/>}/>
             <Route path='/employees' element={<Employees/>}/>
@@ -77,7 +80,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
-
+      </div>
       </BrowserRouter>
     </div>
   )
